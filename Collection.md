@@ -27,6 +27,6 @@
         
 ## ArrayList 클래스
 
-*ArrayList<Integer> list = new ArrayList<Integer>(10); //10칸으로 배열 생성
+* ArrayList<Integer> list = new ArrayList<Integer>(10); //10칸으로 배열 생성
 
 ArrayList는 처음에 배열길이 4가 만들어졌다가 꽉 차서 그 다음 길이 8이 생성된 후 방 대 방(깊은 복사)로 길이 8로 복사가 된다. 그리고 8이 꽉차면 16길이에 또 이 방법을 반복한다.(현재 길이의 2배의 길이인 배열이 생성되는 것) 이 때 배열 4와 배열 8은 버려진다(쓰레기 값이 된다) > 비용이 많이 든다. 
