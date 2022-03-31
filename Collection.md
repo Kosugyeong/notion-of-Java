@@ -42,7 +42,7 @@ ArrayList는 처음에 배열길이 4가 만들어졌다가 꽉 차서 그 다�
         
 ArrayList<String> list = new ArrayList<String>(); // 문자열 배열        
         
-* 1. 요소 추가하기
+1. 요소 추가하기
         - void add(T value)
         배열의 맨 마지막에 추가하기 > Append Mode
         
@@ -52,21 +52,21 @@ ArrayList<String> list = new ArrayList<String>(); // 문자열 배열
         list.add("귤");
         list.add("사과");
         
-* 2. 요소의 개수
+2. 요소의 개수
         - int size() > 배열의 길이가 아니라 요소가 들어가 있는 개수를 센 것이다.
         
-* 3. 요소의 접근
+3. 요소의 접근
         - T get(int index)
         
         System.out.println(list.get(0));
 		System.out.println(list.get(4));
         
-* 4. 요소의 수정
+4. 요소의 수정
         - void set(int index, T newValue) 
         
         String temp = list.set(2, "파인애플"); //수정하기 전 요소의 값을 반환한다.
         
-* 5. 요소의 삭제
+5. 요소의 삭제
         - 순수 배열은 요소 삭제 불가능하지만 컬렉션은 요소 삭제가 가능핟. 
         - T remove(int index) > 방번호를 찾아서 삭제
         - boolean remove(T value) > 값을 찾아서 삭제 > 중복 값이 있다면 처음 만나는 요소만 삭제
@@ -75,7 +75,7 @@ ArrayList<String> list = new ArrayList<String>(); // 문자열 배열
         list.remove(2);
         list.remove("파인애플");
         
-* 6. 탐색
+6. 탐색
         - 루프
         
         for (int i = 0; i < list.size(); i++) {
@@ -86,14 +86,14 @@ ArrayList<String> list = new ArrayList<String>(); // 문자열 배열
 			System.out.println(item);
 		}
         
-* 7. 요소의 추가
+7. 요소의 추가
         - 배열의 원하는 위치에 요소를 추가
         - void add(int index, T value)
         - ****** 시프트가 발생한다!!!! > 삽입된 방 이후의 모든 요소가 방번호 + 1
         
         list.add(2, "망고");
         
-* 8. 요소의 검색
+8. 요소의 검색
         - int indexOf(T value)
         - boolean contains(T value)
         
@@ -101,13 +101,13 @@ ArrayList<String> list = new ArrayList<String>(); // 문자열 배열
         System.out.println(list.contains("사과")); 
                       
         
-* 9. 초기화
+9. 초기화
         - 모든 요소 삭제 > 모든방.remove()
         - void clear()
         
         list.clear();
         
-* 10. 빈배열 확인
+10. 빈배열 확인
         - boolean isEmpty()
         
         System.out.println(list.size() == 0);
