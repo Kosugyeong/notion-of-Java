@@ -1,4 +1,4 @@
-#컬렉션, Collection
+# 컬렉션, Collection
 
 - (향상된) 배열 
 - 기존의 순수 배열의 성능 향상(입출력), 사용법을 개량 > 클래스
@@ -25,7 +25,7 @@
         - HashTable(legacy)
         
         
-##ArrayList 클래스
+## ArrayList 클래스
 
 *ArrayList<Integer> list = new ArrayList<Integer>(10); //10칸으로 배열 생성
 
